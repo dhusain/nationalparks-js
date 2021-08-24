@@ -16,10 +16,10 @@ server.use(restify.plugins.queryParser())
 // server.get('/ws/info/:who', db.wsinfo);
 // server.get('/ws/healthz', function (req, res, next) { res.send("OK"); });
 // server.get('/ws/healthz/:ok', function (req, res, next) { res.send("OK"); });
-server.get('/', function (req, res, next)
-{
-  res.send("Welcome to the National Parks data service.");
-});
+// server.get('/', function (req, res, next)
+// {
+//   res.send("Welcome to the National Parks data service.");
+// });
 
 server.listen(config.get('PORT'), config.get('IP'), function () {
   console.log( "Listening on " + config.get('IP') + ", port " + config.get('PORT') )
