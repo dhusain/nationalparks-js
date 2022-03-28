@@ -7,7 +7,7 @@ var server  = restify.createServer();
 server.use(restify.plugins.queryParser())
 
 
-// server.get('/ws/data/load', db.initDB);
+server.get('/ws/data/load', db.initDB);
 // server.get('/ws/data/within', db.selectBox);
 // server.get('/ws/data/all', db.selectAll);
 // server.get('/ws/backends/info', db.wsinfo);
